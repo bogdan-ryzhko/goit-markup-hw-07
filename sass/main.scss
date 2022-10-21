@@ -6,6 +6,8 @@
 @import "./components/footer";
 @import "./components/modal";
 
+// =================================================> Герой <=================================================
+
 .hero {
   text-align: center;
 
@@ -48,5 +50,54 @@
     &:focus {
       background-color: $hover-btn;
     }
+  }
+}
+
+// =================================================> Переваги <=================================================
+
+.benefits {
+  padding-top: 94px;
+
+  &__title {
+    font-size: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  &__list {
+    @include flexContainer(flex, center);
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    max-width: 270px;
+  }
+
+  &__icon-wrapper {
+    background-color: #f5f4fa;
+    @include flexContainer(flex, center, center);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $descr-color;
   }
 }
