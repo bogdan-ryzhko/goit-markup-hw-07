@@ -3,3 +3,9 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin background($repeat, $size, $position) {
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}

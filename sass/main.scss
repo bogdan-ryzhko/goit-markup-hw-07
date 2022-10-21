@@ -3,6 +3,50 @@
 @import "./base/base";
 @import "./utils/mixins";
 @import "./components/header";
-@import "./components/main-page";
 @import "./components/footer";
 @import "./components/modal";
+
+.hero {
+  text-align: center;
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $secondary-bg;
+  background-image: url("../../images/hero-bg.jpg"),
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  @include background(no-repeat, cover, center);
+  padding: 200px 0;
+
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding: 10px 32px;
+    border: inherit;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: $brand-color;
+    font-weight: 700;
+    transition: background-color $timing-transition;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-btn;
+    }
+  }
+}
