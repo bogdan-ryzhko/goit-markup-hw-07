@@ -196,3 +196,32 @@
     fill: currentColor;
   }
 }
+
+// =================================================> Постійні клієнти <=================================================
+
+.clients {
+  &__list {
+    @include flexContainer(flex, space-between, center);
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    @include flexContainer(flex, center, center);
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    transition: color $timing-transition;
+    color: $icon-color;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $brand-color;
+      color: $brand-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
