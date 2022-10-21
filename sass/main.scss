@@ -101,3 +101,38 @@
     color: $descr-color;
   }
 }
+
+// =================================================> Наша команда <=================================================
+
+.about {
+  &__title {
+  }
+
+  &__list {
+    @include flexContainer(flex, center, center);
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__img {
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    min-height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    @include flexContainer(flex, center, center);
+    color: #ffffff;
+  }
+}
