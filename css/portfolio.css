@@ -964,4 +964,32 @@ img {
 
 .connection__item-footer + .connection__item-footer {
   margin-top: 9px;
+}
+
+.portfolio__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.portfolio__navigation-item + .portfolio__navigation-item {
+  margin-left: 8px;
+}
+
+.navigation__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: inherit;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__btn:hover, .navigation__btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }/*# sourceMappingURL=portfolio.css.map */
