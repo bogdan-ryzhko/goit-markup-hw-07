@@ -3,8 +3,6 @@
 @import "./base/base";
 @import "./utils/mixins";
 @import "./components/header";
-@import "./components/footer";
-@import "./components/modal";
 
 // =================================================> Герой <=================================================
 
@@ -225,3 +223,6 @@
     fill: currentColor;
   }
 }
+
+@import "./components/footer";
+@import "./components/modal";
