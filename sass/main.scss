@@ -102,12 +102,9 @@
   }
 }
 
-// =================================================> Наша команда <=================================================
+// =================================================> Чим ми займаємось <=================================================
 
 .about {
-  &__title {
-  }
-
   &__list {
     @include flexContainer(flex, center, center);
     gap: 30px;
@@ -118,8 +115,6 @@
     position: relative;
   }
 
-  &__img {
-  }
   &__text {
     position: absolute;
     bottom: 0;
@@ -134,5 +129,70 @@
     background-color: rgba(47, 48, 58, 0.8);
     @include flexContainer(flex, center, center);
     color: #ffffff;
+  }
+}
+
+// =================================================> Наша команда <=================================================
+
+.team {
+  background-color: $team-bg;
+
+  &__list {
+    @include flexContainer(flex, center, center);
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    padding: 30px 0;
+  }
+
+  &__item {
+    max-width: 270px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+  }
+
+  &__item-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  &__item-descr {
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $descr-color;
+    margin-bottom: 16px;
+  }
+
+  &__soc-list {
+    @include flexContainer(flex, center, center);
+  }
+
+  &__soc-item + &__soc-item {
+    margin-left: 10px;
+  }
+
+  &__soc-link {
+    @include flexContainer(flex, center, center);
+    padding: 12px;
+    border-radius: 100%;
+    color: $icon-color;
+    transition: background-color $timing-transition, color $timing-transition;
+
+    &:hover,
+    &:focus {
+      background-color: $brand-color;
+      color: #ffffff;
+    }
+  }
+  &__soc-icon {
+    fill: currentColor;
   }
 }
